@@ -1,18 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 // import PropTypes from 'prop-types'
-
-export default class Navbar extends Component {
+import download from './download.png'
+const Navbar = ()=> {
     //   static propTypes = {
     //     prop: PropTypes
     //   }
-
-    render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
                     <div className="container-fluid">
-                        <Link className="navbar-brand" to="/"><h3>NewsMonkey</h3></Link>
+                        <a className="navbar-brand" href="/">
+                            <img src={download} alt="Logo" width="35" height="29" className="d-inline-block align-text-center"/>
+                                NewsMonkey
+                        </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -35,4 +36,5 @@ export default class Navbar extends Component {
             </div>
         )
     }
-}
+    
+    export default Navbar
