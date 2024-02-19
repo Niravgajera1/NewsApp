@@ -72,7 +72,7 @@ const News = (props) => {
           className="text-center"
           style={{ margin: "30px 0px", marginTop: "90px", color: "black" }}
         >
-          <strong>
+          <strong style={{ fontFamily: "serif", fontVariant: "petite-caps" }}>
             Top Headlines From {capitalizeFirstLetter(props.category)}{" "}
           </strong>
         </h1>

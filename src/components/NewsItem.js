@@ -35,8 +35,13 @@ const NewsItem = (props) => {
           style={{ height: "180px" }}
         />
         <div className="card-body d-flex flex-column">
-          <h5 className="card-title">{title}...</h5>
-          <p className="card-text" style={{ flexGrow: 1 }}>
+          <h5 className="card-title" style={{ fontFamily: "initial" }}>
+            {title}...
+          </h5>
+          <p
+            className="card-text"
+            style={{ flexGrow: 1, fontFamily: "sans-serif" }}
+          >
             {description}...
           </p>
           <p className="card-text">
