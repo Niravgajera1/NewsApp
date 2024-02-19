@@ -12,6 +12,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
+              style={{ verticalAlign: "top" }}
               src={download}
               alt="Logo"
               width="35"
